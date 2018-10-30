@@ -1,0 +1,54 @@
+$(document).ready(function(){
+$('.equal-height-list h3 a').each(function(){
+var val = $(this).html();
+if('ONGC at a Glance' == val ){
+$(this).attr('href','/wps/wcm/connect/en/about-ongc/ongc-at-a-glance/corporate-profile/');
+}
+if('Core Business Expertise' == val ){
+$(this).attr('href','/wps/wcm/connect/en/about-ongc/core-business-expertise/exploration/');
+}
+if('New initiatives in Energy' == val ){
+$(this).attr('href','/wps/wcm/connect/en/about-ongc/new-initiatives-in-energy/gas-hydrates/');
+}
+if('Subsidiaries' == val ){
+$(this).attr('href','/wps/wcm/connect/en/about-ongc/subsidiaries/ongc-videsh-limited/');
+}
+if('JVs' == val ){
+$(this).attr('href','/wps/wcm/connect/en/about-ongc/jvs/otpc/');
+}
+if('Performance' == val ){
+$(this).attr('href','/wps/wcm/connect/en/about-ongc/performance/financial/results/');
+}
+if('Interface' == val ){
+$(this).attr('href','/wps/wcm/connect/en/about-ongc/interface/business-development/');
+}
+if('Institute of Drilling Technology' == val ){
+$(this).attr('href','/wps/wcm/connect/en/about-ongc/institute-of-drilling-technology/about-idt/');
+}
+if('Environment' == val ){
+$(this).attr('href','/wps/wcm/connect/en/sustainability/environment/environment-management/');
+}
+if('Energy Center' == val ){
+$(this).attr('href','/wps/wcm/connect/en/sustainability/energy-center/about-us/vision-and-mission/');
+}
+if('Sports' == val ){
+$(this).attr('href','/wps/wcm/connect/en/sports/ongc-sports/');
+}
+if('Dividend Information' == val ){
+$(this).attr('href','/wps/wcm/connect/en/investors/dividend-information/dividend-policy/');
+}
+if('ONGC in News' == val ){
+$(this).attr('href','/wps/wcm/connect/en/media/ongc-in-news/print-media/');
+}
+if('Gallery' == val ){
+$(this).attr('href','/wps/wcm/connect/en/media/gallery/image-gallery/');
+}
+if('Why Work With ONGC' == val ){
+$(this).attr('href','/wps/wcm/connect/en/career/why-work-with-ongc/life-at-ongc/');
+}
+if('Recruitment Policy' == val ){
+$(this).attr('href','/wps/wcm/connect/en/career/recruitment-policy/recruitment-methodology/');
+}
+});
+
+});

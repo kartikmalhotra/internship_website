@@ -1,0 +1,51 @@
+
+(function($) {
+	$.fn.ongcMenu = function(option) {
+		$(".left-menu ul ul").css("display", "none");
+		var obj,
+			item;
+		var options = $.extend({
+				Speed: 220,
+				autohide: 1
+			},
+			option);
+		obj = $(this);
+
+		item = obj.find("ul").parent("li").children("a");
+		obj.attr("data-option", "off");
+		obj.find("ul").parent("li").children("a").each(function( i ) {
+		var a1 = $(this);
+		if (a1.attr("data-option") == "on") {
+				a1.parent("li").children("ul").slideDown(options.Speed,
+					function() {
+						a1.attr("data-option", "on");
+					});
+			}
+			else{
+			a1.attr("data-option", "off");
+			}
+		});
+
+		item.unbind('click').on("click", function() {
+			var a = $(this);
+			if (options.autohide) {
+				a.parent().parent().find("a[data-option='on']").parent("li").children("ul").slideUp(options.Speed / 1.2,
+					function() {
+						$(this).parent("li").children("a").attr("data-option", "off");
+					})
+			}
+			if (a.attr("data-option") == "off") {
+				a.parent("li").children("ul").slideDown(options.Speed,
+					function() {
+						a.attr("data-option", "on");
+					});
+			}
+			if (a.attr("data-option") == "on") {
+				a.attr("data-option", "off");
+				a.parent("li").children("ul").slideUp(options.Speed)
+			}
+		});
+		
+
+	}
+})(window.jQuery);

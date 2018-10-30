@@ -1,0 +1,26 @@
+function getLeftNav(getdata){
+	$.ajax({
+            type: "GET",
+            url: getdata,            
+            async:false,
+            success: function (data) {
+          $("#setNavigation").html(data);          
+            },
+            error: function () { 
+            }
+			});
+}
+
+function getTopMainNav(getdata, gethtmlID){
+	$.ajax({
+            type: "GET",
+            url: getdata,            
+            async:false,
+            success: function (data) {
+          $("#"+gethtmlID).html(data);          
+            },
+            error: function () { 
+            }
+			});
+}
+

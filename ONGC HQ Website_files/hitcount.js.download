@@ -1,0 +1,81 @@
+var req;
+
+
+function ajaxFunction()
+{
+    var xmlHttp
+    try
+    {
+        xmlHttp = new XMLHttpRequest()
+    }
+    catch (e)
+    {
+        try
+        {
+            xmlHttp = new ActiveXObject("Msxml2.XMLHTTP")
+        }
+        catch (e)
+        {
+            try
+            {
+                xmlHttp = new ActiveXObject("Microsoft.XMLHTTP")
+            }
+            catch (e)
+            {
+                alert("Your browser does not support AJAX!")
+                return false
+            } 
+        } 
+    }
+    return xmlHttp
+}
+function getHitCountData(){
+		var URL='/wps/PA_ONGCIndia_Startup/jsp/ongc/hitCount.jsp?stat='+new Date();
+req= ajaxFunction();
+req.open('GET',URL , true);
+//alert(URL);
+req.onreadystatechange =refreshHitCount;
+req.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+req.setRequestHeader("Content-length",12);
+req.setRequestHeader("Connection", "close");
+req.send(this.Params);
+
+}
+
+function refreshHitCount(){
+	
+	if (req.readyState == 4) {
+		if (req.status == 200) {
+		
+	
+	xmlDoc = req.responseXML;
+      
+	var ss=xmlDoc.getElementsByTagName("visitor");
+	var node1=ss[0].getElementsByTagName("hitcount");
+	var count=node1[0].firstChild.nodeValue;
+	 var x=count.length;
+	 var _html='';
+	 for(var a=0;a<9;a++){
+		 if(a<x){
+			_html=_html+'<li>'+count.charAt(a)+'</li>';	 
+		 }
+		 else{
+			_html='<li>'+0+'</li>'+_html;	
+		 }
+	 }
+	 setTimeout(function(){ 
+	_html="<li>Visitor Since May 2018:</li>"+_html;
+	document.getElementById("visit-count").innerHTML=_html;	
+	document.getElementById("visit-count").parentNode.insertAdjacentHTML( 'beforeend', "<div tabindex='-1' role='presentation' id='hitcountspan' class='visually-hidden'>Visitor Since May 2018 : "+count+"</div>" );
+	}, 2500);
+		}
+		
+		}
+	
+}
+
+
+
+
+getHitCountData();
+

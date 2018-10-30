@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Bootstrap Theme The Band</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+
+
+  body {
+      font: 400 15px/1.8 Lato, sans-serif;
+      color: #777;
+  }
+  h3, h4 {
+      margin: 10px 0 30px 0;
+      letter-spacing: 10px;      
+      font-size: 20px;
+      color: #111;
+  }
+  .container {
+      padding: 80px 120px;
+  }
+  .person {
+      border: 10px solid transparent;
+      margin-bottom: 25px;
+      width: 80%;
+      height: 80%;
+      opacity: 0.7;
+  }
+  .person:hover {
+      border-color: #f1f1f1;
+  }
+  .carousel-inner img {
+      -webkit-filter: grayscale(90%);
+      filter: grayscale(90%); /* make all photos black and white */ 
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+  }
+  .carousel-caption h3 {
+      color: #fff !important;
+  }
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+  }
+  .bg-1 {
+      background: #2d2d30;
+      color: #bdbdbd;
+  }
+  .bg-1 h3 {color: #fff;}
+  .bg-1 p {font-style: italic;}
+  .list-group-item:first-child {
+      border-top-right-radius: 0;
+      border-top-left-radius: 0;
+  }
+  .list-group-item:last-child {
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+  }
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+  .thumbnail p {
+      margin-top: 15px;
+      color: #555;
+  }
+  .btn {
+      padding: 10px 20px;
+      background-color: #333;
+      color: #f1f1f1;
+      border-radius: 0;
+      transition: .2s;
+  }
+  .btn:hover, .btn:focus {
+      border: 1px solid #333;
+      background-color: #fff;
+      color: #000;
+  }
+  .modal-header, h4, .close {
+      background-color: #333;
+      color: #fff !important;
+      text-align: center;
+      font-size: 30px;
+  }
+  .modal-header, .modal-body {
+      padding: 40px 50px;
+  }
+  .nav-tabs li a {
+      color: #777;
+  }
+  #googleMap {
+      width: 100%;
+      height: 400px;
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+  }  
+  .navbar {
+      font-family: Montserrat, sans-serif;
+      margin-bottom: 0;
+      background-color: #2d2d30;
+      border: 0;
+      font-size: 11px !important;
+      letter-spacing: 4px;
+      opacity: 0.9;
+  }
+  .navbar li a, .navbar .navbar-brand { 
+      color: #d5d5d5 !important;
+  }
+  .navbar-nav li a:hover {
+      color: #fff !important;
+  }
+  .navbar-nav li.active a {
+      color: #fff !important;
+      background-color: #29292c !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+  }
+  .open .dropdown-toggle {
+      color: #fff;
+      background-color: #555 !important;
+  }
+  .dropdown-menu li a {
+      color: #000 !important;
+  }
+  .dropdown-menu li a:hover {
+      background-color: red !important;
+  }
+  footer {
+      background-color: #2d2d30;
+      color: #f5f5f5;
+      padding: 32px;
+  }
+  footer a {
+      color: #f5f5f5;
+  }
+  footer a:hover {
+      color: #777;
+      text-decoration: none;
+  }  
+  .form-control {
+      border-radius: 0;
+  }
+  textarea {
+      resize: none;
+  }
+ 
+
+
+
+
+
+
+
+
+
+ navigation11 {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  line-height: 1;
+}
+
+.navigation11 ul,
+.navigation11 ul li,
+.navigation11 ul ul {
+  list-style: none;
+  margin: 0;
+  padding:0;
+}
+
+.navigation ul {
+  position: relative;
+  z-index: 500;
+  float: left;
+  color: red;
+}
+
+.navigation11 ul li {
+  float: left;
+  min-height: 0.05em;
+  line-height: 1em;
+  vertical-align: middle;
+  position: relative;
+}
+
+.navigation11 ul li.hover,
+.navigation11 ul li:hover {
+  position: relative;
+  z-index: 510;
+  cursor: default;
+}
+
+.navigation11 ul ul {
+  visibility: hidden;
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  z-index: 520;
+  width: 100%;
+}
+
+.navigation11 ul ul li { float: none; }
+
+.navigation11 ul ul ul {
+  top: 0;
+  right: 0;
+}
+
+.navigation11 ul li:hover > ul { visibility: visible; }
+
+.navigation11 ul ul {
+  top: 0;
+  left: 99%;
+}
+
+.navigation11 ul li { float: none; }
+
+.navigation11 ul ul { margin-top: 0.05em; }
+
+.navigation11 {
+  width: 13em;
+  background: grey;
+  font-family: 'roboto', Tahoma, Arial, sans-serif;
+  zoom: 1;
+}
+
+.navigation11:before {
+  content: '';
+  display: block;
+}
+
+.navigation11:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.navigation11 a {
+  display: block;
+  padding: 1em 1.5em;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.navigation11 > ul { width: 13em; }
+
+.navigation11 ul ul { width: 13em; }
+
+.navigation11 > ul > li > a {
+  border-right: 0.3em solid #000000f;
+  color: #33ffcc;
+}
+
+.navigation11 > ul > li > a:hover { color: #ffffff; }
+
+.navigation11 > ul > li a:hover,
+.navigation11 > ul > li:hover a { background: #3366FF; }
+
+.navigation li { position: relative; }
+
+.navigation11 ul li.has-sub > a:after {
+  content: '>>';
+  position: absolute;
+  right: 1em;
+}
+
+.navigation11 ul ul li.first {
+  -webkit-border-radius: 0 3px 0 0;
+  -moz-border-radius: 0 3px 0 0;
+  border-radius: 0 3px 0 0;
+}
+
+.navigation11 ul ul li.last {
+  -webkit-border-radius: 0 0 3px 0;
+  -moz-border-radius: 0 0 3px 0;
+  border-radius: 0 0 3px 0;
+  border-bottom: 01;
+}
+
+.navigation11 ul ul {
+  -webkit-border-radius: 0 3px 3px 0;
+  -moz-border-radius: 0 3px 3px 0;
+  border-radius: 0 3px 3px 0;
+}
+
+.navigation11 ul ul { border: 1px solid #34A65F; }
+
+.navigation11 ul ul a { color: #ffffff; }
+
+.navigation11 ul ul a:hover { color: #ffffff; }
+
+.navigation11 ul ul li { border-bottom: 1px solid #0F8A5F; }
+
+.navigation11 ul ul li:hover > a {
+  background: #3333ff;
+  color: #ffffff;
+}
+
+.navigation11.align-right > ul > li > a {
+  border-left: 0.3em solid #34A65F;
+  border-right: none;
+}
+
+.navigation11.align-right { float: right; }
+
+.navigation11.align-right li { text-align: right; }
+
+.navigation11.align-right ul li.has-sub > a:before {
+  content: '+';
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  margin-top: -6px;
+}
+
+.navigation11.align-right ul li.has-sub > a:after { content: none; }
+
+.navigation11.align-right ul ul {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  z-index: 598;
+  width: 100%;
+}
+
+.navigation11.align-right ul ul li.first {
+  -webkit-border-radius: 3px 0 0 0;
+  -moz-border-radius: 3px 0 0 0;
+  border-radius: 3px 0 0 0;
+}
+
+.navigation11.align-right ul ul li.last {
+  -webkit-border-radius: 0 0 0 3px;
+  -moz-border-radius: 0 0 0 3px;
+  border-radius: 0 0 0 3px;
+}
+
+.navigation11.align-right ul ul {
+  -webkit-border-radius: 3px 0 0 3px;
+  -moz-border-radius: 3px 0 0 3px;
+  border-radius: 3px 0 0 3px;
+}
+  </style>
+</head>
+
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+       <h1><a href="http://10.205.3.145/newHq/index.html"><img src="logo white.png" alt="League"></a></h1>
+
+        <li ><a href="http://10.205.3.145/newHq/newHq_hindi.aspx" >
+हिंदी में देखने के लिए यहां क्लिक करें</a> </li>
+        
+
+          <li style="background-color:rgb(225,0,0);" ><a href="http://10.205.3.145/newHq/newHq.aspx#" id="current" class="dropdown-toggle" data-toggle="dropdown">Corporate Websites<span class="caret"></span></a>
+                                <ul class="dropdown-menu" >
+                                    <li class=""><a href="http://www.ongcindia.com/" target="_blank">ONGC India</a></li>
+                                    <li ><a href="http://reports.ongc.co.in/" target="_blank">ONGC Reports</a></li>
+                                    <li><a href="http://webice.ongc.co.in/" target="_blank">Webice</a></li>
+                                    <li><a href="http://mail.ongc.co.in/" target="_blank">Web Mail</a></li>
+                                    <li><a href="https://egreeting.ongc.co.in/" target="_blank">E-greeting</a></li>
+                                </ul>
+                                  </li>
+                         
+
+
+
+                            <li  st><a href="http://10.205.3.145/newHq/newHq.aspx#"  id="current" class="dropdown-toggle" data-toggle="dropdown">Internal Websites<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="http://10.205.3.145/oc/" target="_blank"> Officer Club</a></li>
+                                    <li><a href="http://10.205.3.145/ewc/" target="_blank">EWC Dehradun</a></li>
+                                        <li><a href="http://10.205.3.145/vehiclepass/" target="_blank">Vehicle Pass</a></li>
+                                        <li><a href="http://10.205.3.145/crs/home.aspx" target="_blank">CRS Complaint</a></li>
+                                         
+                                         <li><a href="http://10.205.3.145/hindi/" target="_blank">राजभाषा</a></li>
+                      <li><a href="http://10.205.3.145/hos/loginer.aspx" target="_blank">ONGC Hospital</a></li>
+                      <li><a href="http://10.205.3.74/cpfview/" target="_blank">CPF Statement</a></li>  
+                    
+                    <li><a href="http://10.205.3.145/ongcha/" target="_blank">ONGCHA</a></li>
+                    <li><a href="http://10.205.3.145/orc/" target="_blank">Rifle Club</a></li>
+                    <li><a href="http://10.205.19.30/" target="_blank">IDT</a></li>
+                    <li><a href="http://10.205.8.15/" target="_blank">IPE</a></li>  
+                    <li><a href="https://gyanodyan.ongc.co.in/" target="_blank">Knowledge Management</a></li>
+                                </ul>
+                            </li>
+      
+                      
+              <li   style="background-color:rgb(225,0,0);" ><a href="http://10.205.3.145/newHq/newHq.aspx#" class="dropdown-toggle" data-toggle="dropdown">Other Useful Link<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                
+                <li>
+                 <a href="http://10.205.3.145/birthday.aspx" target="_blank">Happy Birthday </a>
+                 </li>
+                <li>
+                 <a href="http://10.205.55.5/New_Forms/HR_ER_Helpdesk.htm" target="_blank">Online Forms</a>
+                 </li>
+                 <li>
+                 <a href="http://10.205.3.145/sow.pdf" target="_blank">SOW SFM</a>
+                 </li>
+                <li>
+              </li><li>
+                 <a href="http://delhiportal.ongc.co.in/" target="_blank">Delhi Intranet</a>
+                 </li>
+              
+                <li>
+                 <a href="http://10.205.3.145/newHq/newHq.aspx#" class="dropdown-toggle" data-toggle="dropdown"> Western Locations<span class="caret"></span></a>
+                 
+                    <ul class="dropdown-menu">
+                 <li><a href="http://10.205.122.39/mr/" target="_blank">Mumbai</a></li>
+                  <li><a href="http://10.205.65.202/" target="_blank">Ankleshwer</a></li>
+                  <li><a href="http://10.205.70.5//" target="_blank"> Ahmedabad</a></li>
+                  <li><a href="http://10.205.92.9/" target="_blank">Cambay</a></li>
+                    <li><a href="http://10.205.55.5/" target="_blank">Vadodra</a></li>
+                       <li><a href="http://10.205.127.106/Index.aspx?from=default" target="_blank">Uran Plant</a></li>
+                    
+                   
+                 
+                        <li><a href="http://10.205.150.100/" target="_blank">IPSHEM(Goa)</a></li>
+                          <li><a href="http://10.205.150.100/" target="_blank">Mehsana</a></li> 
+                            <li><a href="http://10.205.159.58/" target="_blank">Hazira</a></li>
+                 </ul>
+                </li>
+                
+                   <li class="dropdown">
+                 <a href="http://10.205.3.145/newHq/newHq.aspx#" class="dropdown-toggle" data-toggle="dropdown" > North- East Location<span class="caret"></span></a>
+                 <ul class="dropdown-menu">
+                 
+                  <li><a href="http://10.205.210.84/agartala/" target="_blank">Agartala</a></li>
+                     <li><a href="http://10.205.197.201/" target="_blank">Silchar</a></li>
+                     <li><a href="http://10.205.188.55/" target="_blank">Jorhat</a></li>
+                  
+                 </ul>
+                </li><li>
+                </li><li class="dropdown">
+                 <a href="http://10.205.3.145/newHq/newHq.aspx#" class="dropdown-toggle" data-toggle="dropdown"> Eastern Locations<span class="caret">< </a>
+                 <ul class="dropdown-menu">
+                 
+                    <li><a href="http://10.205.204.254/" target="_blank">Kolkata</a></li>
+                 </ul>
+                </li><li>
+                
+                </li><li class="dropdown">
+                 <a href="http://10.205.3.145/newHq/newHq.aspx#" class="dropdown-toggle" data-toggle="dropdown">Southern Locations<span class="caret"> </span></a>
+                 <ul class="dropdown-menu">
+                 
+                  <li><a href="http://10.205.96.40/" target="_blank">Cauvery</a></li>
+                  <li><a href="http://10.205.104.11/" target="_blank">Chennai</a></li>
+                    <li><a href="http://10.205.100.26/" target="_blank">Rajahmundry</a></li>
+                 </ul>
+                </li>
+                 
+                        
+            
+ <li class="dropdown">
+                 <a href="http://10.205.3.145/newHq/newHq.aspx#" class="dropdown-toggle"  data-toggle="dropdown">  External Website<span class="caret"></span></a>
+                 <ul class="dropdown-menu">
+                         
+
+                         
+            <li><a href="http://www.indianrail.gov.in/dont_Know_Station_Code.html" target="_blank">Train Schedule</a></li>
+            <li><a href="http://10.205.122.39/mr/" target="_blank">Flight Schedule</a></li>
+            <li><a href="http://www.balmerlawrie.com/" target="_blank">Balmer Lawrie</a></li><li>
+            <a href="http://10.205.3.145/taxi_services.aspx/" target="_blank">Local Taxi service</a></li>
+            
+                          
+                        </ul>
+         </li>
+      </ul>
+    </div>
+  
+</nav>
+
+
+
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+   
+   
+
+
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+
+
+        <img src="1.jpg" alt="Ongc" width="1200" height="700">
+        <div class="carousel-caption">
+          <h3>ONGC bags 'India pride award'</h3> 
+          <p>Maharana category</p>
+        </div>      
+      </div>
+
+      <div class="item">
+        <img src="5.jpg" alt="  " width="1200" height="700">
+        <div class="carousel-caption">
+          <h3>Dharmendra Pradhan Flags Off ONGC’s
+Ambitious KG-DWN-98/2 East Coast Project</h3>
+          <p>  </p>
+        </div>      
+      </div>
+    
+      <div class="item">
+        <img src="t.jpg" alt="Los Angeles" width="1200" height="700">
+        <div class="carousel-caption">
+          <h3>      </h3>
+          <p>         </p>
+        </div>      
+      </div>
+    
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<!-- Container (The Band Section) -->
+
+
+<div id="band" class="container1 text-center">
+  
+  <div class="col-lg-12 col-md-12 col-sm-12">
+          <a href="http://10.205.3.145/circular/Help%20Document-%20Paperless%20Scanning%20at%20DDN.pdf" target="_blank">
+          <marquee behavior="scroll" onmouseout="this.start();" scrollamount="4" onmouseover="this.stop(); ">
+           
+           <br>
+           <br>  
+                      <span id="lbl_scroll" style="color:red; font-size:large; font-weight:bold">Help document of File scanning process  for Paperless Office (DISHA)</span></marquee>
+               
+               <br>
+               <br>       
+                        </a>
+              
+
+
+
+
+  
+  <p><em>  ONGC Corporate Profile - The Largest Energy Company in India                                         </em></p>
+  <p>This Public Enterprise Represents India's Energy Security Through its Pioneering Efforts.
+
+Maharatna ONGC is the largest crude oil and natural gas Company in India, contributing around 70 per cent to Indian domestic production. Crude oil is the raw material used by downstream companies like IOC, BPCL, and HPCL to produce petroleum products like Petrol, Diesel, Kerosene, Naphtha, and Cooking Gas-LPG.
+
+This largest natural gas company ranks 11th among global energy majors (Platts). It is the only public sector Indian company to feature in Fortune’s ‘Most Admired Energy Companies’ list. ONGC ranks 18th in ‘Oil and Gas operations’ and 183rd overall in Forbes Global 2000. Acclaimed for its Corporate Governance practices, Transparency International has ranked ONGC 26th among the biggest publicly traded global giants. It is most valued and largest E&P Company in the world, and one of the highest profit-making and dividend-paying enterprise.
+
+oil and gas company in india
+
+ONGC has a unique distinction of being a company with in-house service capabilities in all areas of Exploration and Production of oil & gas and related oil-field services. Winner of the Best Employer award, this public sector enterprise has a dedicated team of over 33,500 professionals who toil round the clock in challenging locations..</p>
+  <br>
+  
+
+
+</div>
+<div class="container">
+  <div class="row">
+<div class="col-sm-4">
+
+
+
+
+     <h3 style="color:blue; font-weight:strong">Intranet Menu</h3>
+                
+                <div class="navigation11">
+                <ul>
+  <li class="has-sub"><a href="http://10.205.3.145/hindi/" style="font-weight:bold" target="_blank">ISMS Policies</a>
+  
+  <ul>
+        <li><a href="http://10.205.3.145/newHq/apex_information.pdf" target="_blank">ISMS Manual</a></li>
+                             <li><a href="http://10.205.3.145/newHq/dos_donts.pdf" target="_blank">Dos and Donts related to ISMS</a></li>
+                              </ul>
+  </li>
+  
+   <li><a href="http://10.205.3.145/hindi/" style="font-weight:bold" target="_blank">राजभाषा</a></li>
+    <li><a href="http://10.205.8.60/index.asp" style="font-weight:bold" target="_blank">DTS</a>
+  </li><li><a href="http://10.205.3.145/estate/estate.aspx" style="font-weight:bold" target="_blank">Estate Section</a>
+
+   </li><li class="has-sub"><a href="http://10.205.3.145/newHq/newHq.aspx#">Infocom  Department</a>
+                                <ul>
+                
+                
+                 
+                  <li><a href="http://10.205.3.145/infocom/NewSimReq.aspx" target="_blank">Mobile portability</a></li>
+                   <li><a href="http://10.205.3.145/infocom/NewSim_Req.aspx" target="_blank">New Sim request</a></li>
+                   <li><a href="http://10.205.3.145/infocom/appforretd.aspx" target="_blank">Retention of mobile No after superannuation</a></li>
+                   <li><a href="http://10.205.3.145/infocom/trfappfrm.aspx" target="_blank">Residence Phone Transfer request</a></li>
+                    <li><a href="http://10.205.3.145/infocom/smssend1.aspx" target="_blank">Bulk SMS Send Request</a></li>
+                    <li><a href="http://10.205.3.145/infocom/appform.aspx" target="_blank">EPBAX- Forms/New landline</a></li>
+                    <li><a href="http://10.205.3.145/infocom/default.aspx">Bill Detail</a></li>
+                    <li><a href="http://10.205.3.145/infocom/GPRSnew.aspx" target="_blank">GPRS Form</a></li>
+              
+                 
+                
+                <!-- <li>
+                 <a href="#">Datacard Related</a>
+                
+                 <ul> -->
+                 <li><a href="http://10.205.3.145/infocom/Newdatacardappfrm.aspx" target="_blank">DATA Card Application Form </a></li>
+                  <li><a href="http://10.205.3.145/infocom/Newbroadbandfrm.aspx" target="_blank">Broadband Application Form </a></li>
+                <!--  </ul>
+                 
+                </li> -->
+                                        <li><a href="http://10.205.3.145/infocom/appforUSB.aspx" target="_blank">Request for USB Use</a></li>
+                                       
+                    
+                    
+                    
+                    
+                    
+                  
+                    
+                                      
+                                </ul>
+                            </li>
+
+  
+   <li class="has-sub"><a href="http://10.205.3.145/newHq/newHq.aspx#" style="font-weight:bold">Medical Services</a>
+   <ul>
+        <li><a href="http://cms.ongc.co.in/" target="_blank">Corporate Medical Services</a></li>
+                             <li><a href="http://10.205.3.145/hos/loginer.aspx" target="_blank" style="color: black">Regional  Medical Services</a></li>
+                              </ul>
+   </li>
+    
+  <li class="has-sub"><a href="http://10.205.3.145/newHq/newHq.aspx" style="font-weight:bold">Complaint Management</a>
+  <ul>
+        <li><a href="http://10.205.3.145/crs/home.aspx" target="_blank">CRS Complaint</a></li>
+                            <li><a href="http://10.205.13.33/ICMSdesign/index.php" target="_blank">EPBAX Call Logging </a></li>
+      </ul>
+  </li>
+  
+  
+ 
+       
+        <li class="has-sub"><a href="http://10.205.3.145/newHq/newHq.aspx" style="font-weight:bold">Telephone Directory</a>
+                    <ul>
+        <li><a href="http://10.205.3.145/infocom/mobilesearchnew.aspx" target="_blank">Mobile Number/EPBAX Search</a></li>
+                           <li><a href="http://10.205.3.145/infocom/dirnew3.aspx" target="_blank">Local Telephone Directory</a></li>
+                           <li><a href="http://10.205.3.145/infocom/dirnew2.aspx" target="_blank">Other Region's Directory</a></li>
+      </ul>
+  </li>
+  
+   <li class="has-sub"><a href="http://10.205.3.145/newHq/newHq.aspx" style="font-weight:bold">Forms &amp; Circular</a>
+   
+     <ul>
+     <li><a href="http://10.205.55.5/New_Forms/HR_ER_Helpdesk.htm" target="_blank">Online Form</a></li>
+      <li><a href="http://10.205.55.5/performa/newforms.htm" target="_blank">MISC Form</a></li>
+       <li><a href="http://10.205.3.145/newHQ/Requisition%20for%20creation%20of%20Mail%20id%20in%20Lotus%20Notes.pdf" target="_blank">ONGC Mail Creation Form </a></li>
+       <li><a href="http://10.205.3.145/newHQ/ONGC%20Domain%20ID%20Creation%20Form.pdf" target="_blank">ONGC Domain ID Creation Form </a></li>
+      
+     </ul>
+                 
+  </li>
+  
+  
+  <li class="has-sub"></li><a href="http://10.205.3.145/newHq/newHq.aspx" style="font-weight:bold">Superannuation</a>
+                    <ul>
+        <li><a href="http://10.205.3.145/newHq/newHq.aspx#" target="_blank">Superannuating Employee List</a></li>
+                           <li><a href="http://10.205.3.145/newHq/newHq.aspx#" target="_blank">Picture/Function details </a></li>
+                              </ul>
+  
+  
+  
+   <li class="has-sub"> <a href="http://10.205.3.145/newHq/newHq.aspx" style="font-weight:bold">Miscellaneous Items</a>
+                    <ul>
+        <li><a href="http://10.205.3.145/infocom/MISC_items/MM%20Manual_Updated%20upto_23_06_2015.pdf" target="_blank">MM Manual</a></li>
+        <li><a href="http://10.205.3.145/circular/cda.pdf" target="_blank">CDA Rules</a></li>
+  
+                           <li><a href="http://10.205.3.145/infocom/MISC_items/bdp_2014.pdf" target="_blank">BDP </a></li>
+                           <li><a href="http://10.205.3.145/infocom/MISC_items/holidaylist2017.pdf" target="_blank">Holiday List</a></li>
+                            <li><a href="http://10.205.3.145/infocom/MISC_items/Suggestion%20Scheme%20(ESSEnCE)%20Format.pdf" target="_blank">Suggestion Format</a></li>
+                                   </ul>
+  </li>
+    
+  </ul>
+  
+</div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+     <h3><a href="http://10.205.3.145/birthday.aspx" ><img src="p.gif" style="width:320px;height:230px;"></a></h3>
+                       
+                          
+                           <marquee direction="up" scrolldelay="200">
+                        
+                                    <div>
+  <table class="table table-striped table-hover" cellspacing="0" cellpadding="4" border="0" id="GridView3" style="border-collapse:collapse;">
+    <tbody><tr>
+      <th scope="col">NAME</th><th scope="col">DESIGNATION</th><th scope="col">MOBILENO</th>
+    </tr><tr>
+      <td>HARSH KUMAR SHARMA</td><td>CM (F &amp; A)</td><td>9410391964</td>
+    </tr><tr>
+      <td>VINOD   KUMAR</td><td>Dy.Mgr.(HR)</td><td>9410391090</td>
+    </tr><tr>
+      <td>RAJESH   VARMA</td><td>CE (Mech)</td><td>8006049999</td>
+    </tr><tr>
+      <td>RAKESH KUMAR VAISH</td><td>Mgr.(Security)</td><td>9410390100</td>
+    </tr><tr>
+      <td>RAKESH KUMAR VAISH</td><td>Mgr.(Security)</td><td>9410390100</td>
+    </tr><tr>
+      <td>BLECY   TEP</td><td>Sr.Geologist</td><td>9410396153</td>
+    </tr><tr>
+      <td>AKSHAY SUNIL   BHUSKUTE</td><td>Sr.Geologist</td><td>9969224172</td>
+    </tr><tr>
+      <td>SHIRISH ANANT CHAVAN</td><td>Dy.Mgr..(M &amp; D)</td><td>9969224224</td>
+    </tr><tr>
+      <td>PIYUSH BHIMRAO MODAK</td><td>AT (Prodn)</td><td>9969227027</td>
+    </tr><tr>
+      <td>SURENDRA DHARMA   KOLI</td><td>AT (Elect)</td><td>9969229952</td>
+    </tr><tr>
+      <td colspan="3"><table border="0">
+        <tbody><tr>
+          <td><span>1</span></td><td><a href="javascript:__doPostBack(&#39;GridView3&#39;,&#39;Page$2&#39;)">2</a></td>
+        </tr>
+      </tbody></table></td>
+    </tr>
+  </tbody></table>
+</div>
+                        
+                      </marquee>
+                        
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+    <div class="col-sm-4">
+ <h3 style="color:red; ">Latest Circular</h3>
+                            <br>
+                            <div>
+  <table class="table table-striped table-hover" cellspacing="0" border="0" id="gridviewcircular" style="font-weight:bold;border-collapse:collapse;">
+    <tbody><tr>
+     </td><td>28/06/2018</td><td style="width:400px;"><a href="http://10.205.3.145/circular/circular_260618.pdf" target="_blank">Circular regarding handing over/ taking over during transfer/separation</a></td>
+    </tr><tr>
+     <td>27/06/2018</td><td style="width:400px;"><a href="http://10.205.3.145/circular/PR%20%20TT.pdf" target="_blank">ओएनजीसी मुख्यालय में अंतर क्षेत्रीय टेबल टेनिस प्रतियोगिता प्रारंभ</a></td>
+    </tr><tr>
+     <td>22/06/2018</td><td style="width:400px;"><a href="http://10.205.3.145/circular/List%20of%20RWA%20members%2022_6.pdf" target="_blank">RWA Membership List</a></td>
+    </tr><tr>
+    <td>20/06/2018</td><td style="width:400px;"><a href="http://10.205.3.145/circular/%e0%a4%b9%e0%a4%bf%e0%a4%a8%e0%a5%8d%e2%80%8d%e0%a4%a6%e0%a5%80%20%20%e0%a4%b8%e0%a5%87%e0%a4%b5%e0%a5%80%20%e0%a4%95%e0%a4%be%e0%a4%b0%e0%a5%8d%e0%a4%ae%e0%a4%bf%e0%a5%87%e0%a4%95%20%e0%a4%95%e0%a5%8b%20%e0%a4%aa%e0%a5%81%e0%a4%b0%e0%a4%b8%e0%a5%8d%e2%80%8d%e0%a4%95%e0%a5%83%e0%a4%a4%20%e0%a4%95%e0%a4%b0%e0%a4%a8%e0%a5%87%20%e0%a4%95%e0%a5%87%20%e0%a4%b8%e0%a4%82%e0%a4%ac%e0%a4%82%e0%a4%a7%20%e0%a4%ae%e0%a5%87%e0%a4%82%20%e0%a4%aa%e0%a4%b0%e0%a4%bf%e0%a4%aa%e0%a4%a4%e0%a5%8d%e0%a4%b0%20.pdf" target="_blank">हिन्‍दी  सेवी कार्मिेक को पुरस्‍कृत करने के संबंध में परिपत्र </a></td>
+    </tr><tr>
+    
+    </tr><tr>
+      </td><td>20/06/2018</td><td style="width:400px;"><a href="http://10.205.3.145/circular/Election%20Result.pdf" target="_blank">Result of AISCSTEWA Election for the term 2018-20</a></td>
+    </tr><tr>
+     <td>19/06/2018</td><td style="width:400px;"><a href="http://10.205.3.145/circular/Circular_International%20Yoga%20Day_21.06.2018_ONGC%20Tel%20Bhavan.pdf" target="_blank">Celebration of 4th International Day of Yoga on June 21,2018</a></td>
+    </tr><tr>
+    <td>18/06/2018</td><td style="width:400px;"><a href="http://10.205.3.145/circular/Office%20Order%20related%20to%20Swachhata%20Pakhwada%20events.pdf" target="_blank">Swachhta Pakhwada to be observed at HQ from (1st July - 15th July 2018)</a></td>
+    </tr><tr>
+     <td>14/06/2018</td><td style="width:400px;"><a href="http://10.205.3.145/circular/Transit009_Energy%20meter%20reading%20May18%20(1).pdf" target="_blank">Energy Meters Reading as of May   2018</a></td>
+    </tr><tr>
+      <td>13/06/2018</td><td style="width:400px;"><a href="http://10.205.3.145/circular/Detailed%20Information%20Security%20Policies.002.pdf" target="_blank">Detailed Information Security Policies</a></td>
+    </tr><tr>
+  </td><td>13/06/2018</td><td style="width:400px;"><a href="http://10.205.3.145/circular/April-June%20Edition%20of%20e-Newsletter.002.pdf" target="_blank">April- June Edition of E-Newsletter</a></td>
+    </tr><tr>
+    <td>13/06/2018</td><td style="width:400px;"><a href="http://10.205.3.145/circular/Apex%20Information%20Security%20Policy.002.pdf" target="_blank">Apex Information Security Policy</a></td>
+    </tr><tr>
+      <td>08/06/2018</td><td style="width:400px;"><a href="http://10.205.3.145/circular/addendum%20notification.pdf" target="_blank">Addendum Notification- RWA</a></td>
+    </tr>
+  </tbody></table>
+
+       
+                    
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+     </div>
+       <div class="col-sm-4">
+</div>
+
+    <div class="col-sm-4">
+<h3 style="color:red;">Corporate ONGC Film</h3>
+<iframe width="400" height="370" src="https://www.youtube.com/embed/2OohjaX8C9U" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+
+ <div class="col-sm-2 col-md-2 col-lg-2">
+                       <h3 style="color:blue; font-weight:strong">  Recent Story</h3>
+                      
+                           <marquee direction="up" scrolldelay="200">
+                        
+                          
+                           <div>
+  <table class="table table-striped table-hover" cellspacing="0" border="0" id="gridview1" style="font-weight:bold;border-collapse:collapse;">
+    <tbody><tr>
+      <td style="width:400px;"><a href="http://10.205.3.145/Article/OOMS-%20Annual%20day%20final.pdf" target="_blank">OOMS Dehradun Celebrates Annual Day-2017- Junoon Nari Shakti Ka</a></td>
+    </tr><tr>
+      <td style="width:400px;"><a href="http://10.205.3.145/Article/Fire%20Services%20Week%202017.pdf" target="_blank">Fire Services Week celebrated at Headquarters Dehradun</a></td>
+    </tr><tr>
+      <td style="width:400px;"><a href="http://10.205.3.145/Article/KV%20CIRCULAR%203.4.17.pdf" target="_blank"></a></td>
+    </tr><tr>
+      <td style="width:400px;"><a href="http://10.205.3.145/Article/self%20Defence.pdf" target="_blank">‘आत्म रक्षा’ प्रशिक्षण शिविर का आयोजन</a></td>
+    </tr><tr>
+      <td style="width:400px;"><a href="http://10.205.3.145/Article/International%20Women%20Day%20Celebrated%20at%20ONGc%20Headquarters.pdf" target="_blank">International Women Day Celebrated at ONGC Headquarters</a></td>
+    </tr><tr>
+      <td style="width:400px;"><a href="http://10.205.3.145/Article/Anand%20Mela.pdf" target="_blank">Anand Mela -2017 by OOMS Dehradun  a resounding success </a></td>
+    </tr><tr class="gvwCasesPager" align="right">
+      <td><table border="0">
+        <tbody><tr>
+          <td><span>1</span></td><td><a href="javascript:__doPostBack(&#39;gridview1&#39;,&#39;Page$2&#39;)">2</a></td>
+        </tr>
+      </tbody></table></td>
+    </tr>
+  </tbody></table>
+</div>
+                            
+                          
+                           
+                           
+                           
+                           
+                           
+                           
+                            
+                        </marquee>
+                          
+
+
+</div>
+
+
+                    </div>
+
+
+
+                    </div>
+              
+      </div>
+    </section>
+    <!--end info service-->
+
+  <!--end wrapper-->
+
+  <section class="footer_bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          
+          <p class="copyright" style="text-align:center"> Best viewed in Chrome 30+, Firefox 25+ and IE 9+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   INFOCOM Tel Bhavan 2016-17,ONGC © </p>
+          <!--<p > Total Hit Counts <span id="lblCount" style="color:Red;"></span></p> -->
+        </div>
+
+      <!--  <div class="col-lg-6 col-md-6 col-sm-6">
+          <div class="footer_social">
+            <ul class="footbot_social">
+              <li><a class="fb" href="#." data-placement="top" data-toggle="tooltip" title="Facbook"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="twtr" href="#." data-placement="top" data-toggle="tooltip" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="dribbble" href="#." data-placement="top" data-toggle="tooltip" title="Dribbble"><i class="fa fa-dribbble"></i></a></li>
+              <li><a class="skype" href="#." data-placement="top" data-toggle="tooltip" title="Skype"><i class="fa fa-skype"></i></a></li>
+              <li><a class="rss" href="#." data-placement="top" data-toggle="tooltip" title="RSS"><i class="fa fa-rss"></i></a></li>
+            </ul>
+          </div>
+        </div> -->
+    
+
+  <script type="text/javascript" src="jquery-1.10.2.min.js.download"></script>
+  <script src="bootstrap.js.download"></script>
+  <script src="jquery.easing.1.3.js.download"></script>
+  <script src="retina-1.1.0.min.js.download"></script>
+  <script type="text/javascript" src="jquery.cookie.js.download"></script> <!-- jQuery cookie -->
+  <script type="text/javascript" src="styleswitch.js.download"></script> <!-- Style Colors Switcher -->
+    <script src="jquery.fractionslider.js.download" type="text/javascript" charset="utf-8"></script>
+
+    <script src="jquery.superfish.js.download"></script>
+  <script src="jquery.meanmenu.js.download"></script>
+
+  <script type="text/javascript" src="jquery.jcarousel.js.download"></script>
+  <script type="text/javascript" src="jflickrfeed.js.download"></script>
+
+  <script type="text/javascript" src="jquery.magnific-popup.min.js.download"></script>
+  <script type="text/javascript" src="jquery.isotope.min.js.download"></script>
+  <script type="text/javascript" src="swipe.js.download"></script>
+
+  <script src="main.js.download"></script>
+
+  <!-- Start Style Switcher -->
+  <div class="switcher" style="left: -255px;">  <h2>Choose Theme <a href="file:///E:/Welcome%20to%20ONGC%20HQ%20Website.html#"></a></h2>     <div class="content">     <div class="switcher-box">     <h3>Pick Color</h3>     <a id="default" class="styleswitch color"></a>    <a id="Green" class="styleswitch color"></a>    <a id="Purpule" class="styleswitch color"></a>    <a id="blue" class="styleswitch color"></a>     <a id="Orange" class="styleswitch color"></a>     <a id="DarkGreen" class="styleswitch color"></a>    <a id="DarkCyan" class="styleswitch color"></a>     <a id="maroon" class="styleswitch color"></a>     </div><!-- End switcher-box -->         <div class="clear"></div>     </div><!-- End content -->    <h2>Choose Theme <a href="http://10.205.3.145/newHq/newHq.aspx#"></a></h2>     <div class="content">     <div class="switcher-box">     <h3>Pick Color</h3>     <a id="default" class="styleswitch color"></a>    <a id="Green" class="styleswitch color"></a>    <a id="Purpule" class="styleswitch color"></a>    <a id="blue" class="styleswitch color"></a>     <a id="Orange" class="styleswitch color"></a>     <a id="DarkGreen" class="styleswitch color"></a>    <a id="DarkCyan" class="styleswitch color"></a>     <a id="maroon" class="styleswitch color"></a>     </div><!-- End switcher-box -->         <div class="clear"></div>     </div><!-- End content -->  </div>
+  <!-- End Style Switcher -->
+    <script type="text/javascript"> /*-- Fraction Slider Parameters --*/
+    $(window).load(function(){
+        $('.slider').fractionSlider({
+            'fullWidth':      true,
+            'controls':       true,
+            'responsive':       true,
+            'dimensions':       "1920,450",
+            'increase':       true,
+            'pauseOnHover':     true,
+            'slideEndAnimation':  true,
+            'autoChange':           true
+        });
+
+    });
+    </script>
+    
+    <script type="text/javascript">
+    var image = document.getElementById('myImage');
+    var today = new Date();
+  var d = today.getDate();
+  var m = today.getMonth()+1;
+            var picPaths = ["Aaj ka vichar new/Vichar/"+d+"-"+m+".bmp","Aaj ka vichar new/Shabd/"+d+".bmp"];
+            var curPic = -1;
+            //preload the images for smooth animation
+            var imgO = new Array();
+            for(i=0; i < picPaths.length; i++) {
+                imgO[i] = new Image();
+                imgO[i].src = picPaths[i];
+            }
+
+            function swapImage() {
+                curPic = (++curPic > picPaths.length-1)? 0 : curPic;
+                imgCont.src = imgO[curPic].src;
+                setTimeout(swapImage,9000);
+        if(document.getElementById("v/s").innerHTML=="Aaj ka Shabd")
+          document.getElementById("v/s").innerHTML="Aaj ka Vichar";
+        else
+          document.getElementById("v/s").innerHTML="Aaj ka Shabd";
+        
+            }
+
+            window.onload=function() {
+                imgCont = document.getElementById('myImage');
+                swapImage();
+            }
+</script>
+    
+
+
+</section></form></header><div class="btntoTop"></div><div class="btntoTop"></div>
+
+
+
+
+
+
+
+
+
+</body>
+    <!-- Info Block -->
+     
+
+
+</html>
